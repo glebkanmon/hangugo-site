@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 export const siteUrl = process.env.SITE_URL ?? 'https://hangugo.app';
-export const routes = ['/', '/support/', '/privacy/', '/terms/', '/gmetronome/', '/gmetronome/support/', '/gmetronome/privacy/', '/classroom-bot/', '/classroom-bot/privacy/'];
+export const routes = ['/', '/support/', '/privacy/', '/terms/', '/gmetronome/', '/gmetronome/support/', '/gmetronome/privacy/', '/classroom-bot/', '/classroom-bot/privacy/', '/classroom-bot/terms/'];
 export const apps = {
   hangugo: { name: 'Hangugo', href: '/', mark: 'ㅎ', description: 'Thoughtful Korean practice for everyday progress.', appStore: 'https://apps.apple.com/kz/app/hangugo-korean-practice/id6799656298', googlePlay: null as string | null },
   gmetronome: { name: 'GMetronome', href: '/gmetronome/', mark: '120', description: 'A precise, distraction-free metronome for everyday music practice.', appStore: 'https://apps.apple.com/app/id1566795992', googlePlay: null as string | null },
