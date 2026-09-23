@@ -1,7 +1,8 @@
+import { pageMetadata } from '../../lib/site';
 import Link from 'next/link';
 import { LegalPage } from '../site-components';
 
-export const metadata = { title: 'Terms of Use — Hangugo', description: 'Terms governing use of the Hangugo Korean learning app.' };
+export const metadata = pageMetadata('Terms of Use — Hangugo', 'Terms governing use of the Hangugo Korean learning app.', '/terms/');
 
 export default function Terms() {
   return <LegalPage eyebrow="Terms for using Hangugo" title="Terms of Use" updated="August 27, 2026">

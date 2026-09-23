@@ -1,0 +1,15 @@
+.gmetronome{--ink:#101713;--muted:#626c65;--line:#d9e0da;--paper:#f5f8f1;--green:#397647;--mint:#dcebd9;--dial:#e0e6dc;background:var(--paper);color:var(--ink)}
+.gmetronome .site-header{background:rgba(245,248,241,.92)}
+.gmetronome .brand-mark{width:40px;height:40px;flex-shrink:0;border:3px solid var(--green);border-radius:50%;background:#111;color:#72a7ff;box-shadow:inset 0 0 0 5px #cfd1cf;font-size:8px}
+.dial-card{position:relative;display:grid;place-items:center;min-height:510px;border:1px solid rgba(255,255,255,.85);border-radius:38px;background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(230,239,226,.82));box-shadow:0 34px 90px rgba(49,86,58,.16);transform:rotate(1.5deg)}
+.dial-card:before{content:"";position:absolute;z-index:-1;inset:0;border-radius:50%;background:radial-gradient(circle,var(--mint),transparent 67%);filter:blur(12px)}
+.dial{position:relative;display:grid;place-items:center;width:min(370px,78vw);aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(from -1deg,var(--green) 0 1.3deg,transparent 1.3deg 9deg),var(--dial);box-shadow:inset 0 0 0 28px rgba(245,248,241,.58)}
+.dial:after{content:"";position:absolute;inset:47px;border-radius:50%;background:var(--paper);box-shadow:0 13px 24px rgba(31,50,35,.14),inset 0 1px 0 #fff}
+.dial-face{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.dial-face strong{font-size:76px;line-height:1;letter-spacing:-.07em}
+.dial-face span{margin-top:9px;font-size:27px}
+.dial-face i{margin-top:20px;font-size:15px;font-style:normal}
+.meter{position:absolute;bottom:31px;display:flex;align-items:center;gap:8px;color:var(--green);font-size:13px;font-weight:850}
+.meter-line{width:24px;height:1px;background:var(--green)}
+.dial{width:min(370px,90%)}
+@media(max-width:760px){.dial-card{min-height:390px;transform:none}.dial-face strong{font-size:64px}}
