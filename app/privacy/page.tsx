@@ -1,7 +1,8 @@
+import { pageMetadata } from '../../lib/site';
 import Link from 'next/link';
 import { LegalPage } from '../site-components';
 
-export const metadata = { title: 'Privacy Policy — Hangugo', description: 'How Hangugo handles account, learning, analytics, and purchase data.' };
+export const metadata = pageMetadata('Privacy Policy — Hangugo', 'How Hangugo handles account, learning, analytics, and purchase data.', '/privacy/');
 
 export default function Privacy() {
   return <LegalPage eyebrow="Your data, explained clearly" title="Privacy Policy" updated="August 27, 2026">

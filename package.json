@@ -6,10 +6,11 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
+    "dev": "next dev",
     "build": "next build",
-    "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "check:export": "node scripts/check-export.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "next": "^16.3.3",

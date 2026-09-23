@@ -1,7 +1,8 @@
+import { pageMetadata } from '../../lib/site';
 import Link from 'next/link';
 import { LegalPage } from '../site-components';
 
-export const metadata = { title: 'Support — Hangugo', description: 'Help and support for the Hangugo Korean learning app.' };
+export const metadata = pageMetadata('Support — Hangugo', 'Help and support for the Hangugo Korean learning app.', '/support/');
 
 export default function Support() {
   return <LegalPage eyebrow="We are here to help" title="Hangugo Support">
