@@ -158,7 +158,7 @@ Policy was checked against `korean-classroom-bot` commit
 Supabase repository/migrations, delivery and DeepSeek prompt. It describes the
 three actual scopes, no separate submission retrieval, stored material metadata,
 optional text enrichment, and manual retention/deletion. No secret files are read
-or copied. Public contact: `gmonetchikov@gmail.com` (operator-provided).
+or copied. Public contact: `support@hangugo.app` (operator-provided).
 
 Before OAuth submission, configure the developer/contact email in Google Cloud,
 verify the authorized domain, confirm private Telegram membership and explicit
