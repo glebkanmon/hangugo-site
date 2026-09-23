@@ -1,7 +1,7 @@
 # Hangugo website
 
 Hangugo remains the product at the root. GMetronome has a separate product section;
-Korean Classroom Bot has only a technical homepage and privacy policy. Next.js static
+Korean Classroom Bot has only a technical homepage and legal pages. Next.js static
 export is published by GitHub Actions to GitHub Pages in `glebkanmon/hangugo-site`.
 The existing GMetronome deployment is independent and must remain online.
 
@@ -36,6 +36,7 @@ No backend, database, authentication or new analytics are added to the website.
 | GMetronome | Privacy | https://hangugo.app/gmetronome/privacy/ |
 | Classroom Bot | OAuth homepage | https://hangugo.app/classroom-bot/ |
 | Classroom Bot | OAuth privacy | https://hangugo.app/classroom-bot/privacy/ |
+| Classroom Bot | OAuth terms | https://hangugo.app/classroom-bot/terms/ |
 
 There is no `/apps/` catalog and no GMetronome Terms page. Classroom Bot is excluded
 from public app configuration and product navigation. Hangugo iOS uses the published
@@ -141,7 +142,7 @@ Do not interpret the checklist below as evidence that this risk has been resolve
    successfully at the corresponding hangugo.app route, with no 404 or TLS errors.
    Also open them in a browser; curl cannot follow an HTML fallback redirect.
 9. Only after ALL production checks pass, manually update store URLs using the
-   mapping above and configure OAuth homepage/privacy URLs. Keep compatibility.
+   mapping above and configure OAuth homepage/privacy/terms URLs. Keep compatibility.
 
 ### Rollback
 
