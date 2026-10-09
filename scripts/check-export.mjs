@@ -20,7 +20,8 @@ for (const route of routes) {
 }
 const home = readFileSync('out/index.html', 'utf8');
 assert.ok(home.includes('https://apps.apple.com/kz/app/hangugo-korean-practice/id6799656298'));
-assert.ok(!home.includes('https://play.google.com'));
+assert.ok(home.includes('https://play.google.com/store/apps/details?id=com.glebkanmon.hangugo'));
+assert.ok(!home.includes('Google Play — coming soon'));
 assert.ok(!home.includes('Coming soon to the App Store'));
 assert.ok(!existsSync('out/gmetronome/terms/index.html'));
 assert.ok(!existsSync('out/apps/index.html'));
