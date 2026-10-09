@@ -39,8 +39,8 @@ No backend, database, authentication or new analytics are added to the website.
 | Classroom Bot | OAuth terms | https://hangugo.app/classroom-bot/terms/ |
 
 There is no `/apps/` catalog and no GMetronome Terms page. Classroom Bot is excluded
-from public app configuration and product navigation. Hangugo iOS uses the published
-App Store URL; Android stays noninteractive until `apps.hangugo.googlePlay` is set.
+from public app configuration and product navigation. Hangugo uses its published
+App Store and Google Play URLs.
 Store listings are changed manually only after the new domain passes all checks.
 
 ## Architecture and adding another app
