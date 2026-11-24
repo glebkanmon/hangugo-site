@@ -23,6 +23,8 @@ assert.ok(home.includes('https://apps.apple.com/kz/app/hangugo-korean-practice/i
 assert.ok(home.includes('https://play.google.com/store/apps/details?id=com.glebkanmon.hangugo'));
 assert.ok(!home.includes('Google Play — coming soon'));
 assert.ok(!home.includes('Coming soon to the App Store'));
+const gmetronome = readFileSync('out/gmetronome/index.html', 'utf8');
+assert.ok(gmetronome.includes('https://play.google.com/store/apps/details?id=ru.glebmon.g_metronome'));
 const appAds = readFileSync('out/app-ads.txt', 'utf8');
 assert.ok(appAds.includes('yandex.com, 330409039, DIRECT'), 'Yandex app-ads.txt seller entry');
 assert.ok(!existsSync('out/gmetronome/terms/index.html'));
